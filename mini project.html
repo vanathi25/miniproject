@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .right {
+            float: right;
+
+        }
+
+        .left {
+            width: 55vw;
+            height: 50vh;
+        }
+
+        h1,
+        h3 {
+            text-align: center;
+            color: blue;
+
+        }
+input[type=text],
+        input[type=password] {
+            width: 100%;
+            height: 30px;
+            border-radius: 5px;
+
+        }
+
+        input[type=submit] {
+            width: 102%;
+            height: 35px;
+            background-color: blue;
+            border-radius: 5px;
+        }
+
+
+        h2 {
+            text-align: center;
+            font-size: xx-large;
+            color: white;
+        }
+
+        img {
+            border-radius: 10px;
+            position: relative;
+               top: 10px;
+               right: 10px;
+        }
+
+        .container header {
+            text-align: center;
+            font-size: 400%;
+color: aqua;
+
+        }
+
+        h3 {
+            background-color: aqua;
+            display: inline-block;
+            padding: 10px;
+        }
+
+        .container1 p {
+            display: none;
+
+        }
+
+        .container1:hover p {
+            display: block;
+
+        }
+
+        .container2 p {
+            display: none;
+
+        }
+
+        .container2:hover p {
+            display: block;
+
+        }
+
+        .container2 img {
+            display: none;
+
+        }
+
+        .container2:hover img {
+            display: block;
+
+        }
+
+        body {
+            background-image: url("background.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+
+        }
+
+        .chatbot {
+            position: fixed;
+            bottom: 10px;
+            right: 20px;
+        }
+
+        .footer1 {
+            clear: both;
+        }
+
+        .contact {
+            margin: top 20px;
+            width: 177%;
+            height: 200px;
+            clear: both;
+            display: flex;
+            flex-direction: row;
+            flex-basis: 20%;
+            flex-wrap: wrap;
+        }
+
+        .box1 {
+            background-color: blueviolet;
+            width: 300px;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .box1 span {
+            font-size: x-large;
+        }
+        .box1 svg{
+            position: relative;
+            top:10px;
+        }
+
+        .box2 {
+            background-color: blueviolet;
+            width: 300px;
+            margin: 5px;
+            padding: 5px;
+        }
+        .box2 span{
+            font-size: x-large;
+           
+        }
+        .box2 svg{
+            position: relative;
+            top:13px;
+            right: 8px;
+        }
+
+        .box3 {
+            background-color: blueviolet;
+            width: 300px;
+            margin: 5px;
+            padding: 5px;
+
+        }
+        .box3 span{
+            font-size: x-large;
+        }
+        .box3 svg{
+            position: relative;
+            top:10px;
+        }
+
+        .box4 {
+            background-color: blueviolet;
+            width: 300px;
+            margin: 5px;
+        padding: 5px;
+            position: relative;
+        }
+        .box4 span{
+            font-size: x-large;
+        }
+        .box4 svg{
+            position: relative;
+            top:10px;
+        }
+
+        fieldset label {
+            color: white;
+        }
+
+        @media screen and (max-width:600px) {
+
+            h1,
+            h2,
+            h3,
+            h4 {
+                color: chartreuse;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .contact {
+                flex-basis: 40%;
+
+
+
+            }
+
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header><img src="word-tech.jpg" width="10%">Techcourse</header>
+    </div>
+    <h2>“Technology will never replace great teachers but technology in the hands of great teachers is
+        transformational.”</h2>
+    <img src="institute-office.jpg" width="500px" height="200px"><img src="working trainer.jpg" width="200px"
+        height="200px"><img src="DI 2.jpg" width="220px" height="200px">
+    <div class="right">
+        <fieldset>
+            <form>
+                <h3>Register Here</h3><br>
+                <label for="text">Enter Name:</label><br>
+                <input type="text" placeholder="vanathi K"><br>
+                <label for="mail">Enter address:</label><br>
+                <Input type="text" placeholder="vanathi25@sample.com"><br><br>
+                <label for="Mobile">Enter Phone number</label>
+                <Input type="text" placeholder="7022550917"><br><br>
+                <label for="text">Selcet Course:</label>
+                <input list="course" placeholder="Phython">
+                <datalist id="course">
+                    <option>Java Fullstack</option>
+                    <option>Phython Fullstack</option>
+                    <option>Frontend developing</option>
+                    <option>Backend developing</option>
+                    <option>UI/UX</option>
+                    <option>AI</option>
+                </datalist><br><br>
+                <input type="submit" value="submit">
+            </form>
+        </fieldset>
+    </div>
+
+
+    <div class="left">
+        <div class="container1">
+            <h3>About</h3>
+            <p>Techcourse rated as the top 1 training institute for working Professionals in Chennai and Bangalore
+                location. Tech course Offers Classroom, Corporate and Online Training for all trending Courses with
+                Practical Sessions.</p>
+        </div>
+        <div class="container2">
+            <h3>service</h3>
+            <p> Techcourse is the No. 1 Placement Training Institute in Chennai and we are here to offer numerous
+                placements for college students and there are many software courses assisting in 100% Placement. We
+                promise in providing free placement support to all the certified fresher applicants.</p>
+
+        </div>
+        <div class="footer1">
+            <h1>contact info</h1>
+        </div>
+        <div class="contact">
+            <div class="box1">
+               
+                <span><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"
+                        fill="#5f6368">
+                        <path
+                            d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z" />
+                    </svg>Adreess:</span> <br><br>
+                Techcourse<br>
+                MSR Nagar, MSRIT Post<br>
+                Bangalore, PIN- 560 054<br>
+                Karnataka<br>
+                INDIA<br>
+                <span><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="48px"
+                        fill="#5f6368">
+                        <path
+                            d="M795-120q-116 0-236.5-56T335-335Q232-438 176-558.5T120-795q0-19.29 12.86-32.14Q145.71-840 165-840h140q14 0 24 10t14 25l26.93 125.64Q372-665 369.5-653.5t-10.73 19.73L259-533q26 44 55 82t64 72q37 38 78 69.5t86 55.5l95-98q10-11 23.15-15 13.15-4 25.85-2l119 26q15 4 25 16.04 10 12.05 10 26.96v135q0 19.29-12.86 32.14Q814.29-120 795-120ZM229-588l81-82-23-110H180q2 42 13.5 88.5T229-588Zm369 363q41 19 89 31t93 14v-107l-103-21-79 83ZM229-588Zm369 363Z" />
+                    </svg></span>Mobile:9788150175
+
+            </div>
+            <div class="box2">
+                <span><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"
+                        fill="#5f6368">
+                        <path
+                            d="M633-199q12 0 21-9t9-21q0-12-9-21t-21-9q-12 0-21 9t-9 21q0 12 9 21t21 9Zm100 0q12 0 21-9t9-21q0-12-9-21t-21-9q-12 0-21 9t-9 21q0 12 9 21t21 9Zm100 0q12 0 21-9t9-21q0-12-9-21t-21-9q-12 0-21 9t-9 21q0 12 9 21t21 9Zm-653 79q-24.75 0-42.37-17.63Q120-155.25 120-180v-600q0-24.75 17.63-42.38Q155.25-840 180-840h600q24.75 0 42.38 17.62Q840-804.75 840-780v329q-14-8-29.5-13t-30.5-8v-308H180v600h309q4 16 9.02 31.17Q503.05-133.66 510-120H180Zm0-107v47-600 308-4 249Zm100-53h211q4-16 9-31t13-29H280v60Zm0-170h344q14-7 27-11.5t29-8.5v-40H280v60Zm0-170h400v-60H280v60ZM732.5-41Q655-41 600-96.5T545-228q0-78.43 54.99-133.72Q654.98-417 733-417q77 0 132.5 55.28Q921-306.43 921-228q0 76-55.5 131.5T732.5-41Z" />
+                    </svg>Admission:</span><br>
+                <h5>sendmail to : techadm@sample.com</h5>
+            </div>
+            <div class="box3">
+                <span><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"
+                        fill="#5f6368">
+                        <path
+                            d="M420-80v-280h-80v-253q0-24.75 17.63-42.38Q375.25-673 400-673h160q24.75 0 42.38 17.62Q620-637.75 620-613v253h-80v280H420Zm60.08-654q-30.08 0-51.58-21.42t-21.5-51.5q0-30.08 21.42-51.58t51.5-21.5q30.08 0 51.58 21.42t21.5 51.5q0 30.08-21.42 51.58t-51.5 21.5Z" />
+                    </svg> BOYS HOSTEL:</span><br><br>
+                Techcourse boys Hostel,<br>
+                Direct Line(Office) : +91-80-23600003<br>
+                <span><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="48px"
+                        fill="#5f6368">
+                        <path
+                            d="M795-120q-116 0-236.5-56T335-335Q232-438 176-558.5T120-795q0-19.29 12.86-32.14Q145.71-840 165-840h140q14 0 24 10t14 25l26.93 125.64Q372-665 369.5-653.5t-10.73 19.73L259-533q26 44 55 82t64 72q37 38 78 69.5t86 55.5l95-98q10-11 23.15-15 13.15-4 25.85-2l119 26q15 4 25 16.04 10 12.05 10 26.96v135q0 19.29-12.86 32.14Q814.29-120 795-120ZM229-588l81-82-23-110H180q2 42 13.5 88.5T229-588Zm369 363q41 19 89 31t93 14v-107l-103-21-79 83ZM229-588Zm369 363Z" />
+                    </svg></span> Mobile: 7829134223 <br>
+                <h5>any quries mail to hostel@boystech.com</h5>
+            </div>
+            <div class="box4">
+                <span><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"
+                        fill="#5f6368">
+                        <path
+                            d="M420-80v-220H300l102-328q8-25 30-38.5t48-13.5q26 0 48 13.5t30 38.5l102 328H540v220H420Zm60.08-654q-30.08 0-51.58-21.42t-21.5-51.5q0-30.08 21.42-51.58t51.5-21.5q30.08 0 51.58 21.42t21.5 51.5q0 30.08-21.42 51.58t-51.5 21.5Z" />
+                    </svg> LADIES HOSTEL:</span><br><br>
+                Techcourse ladies Hostel,<br>
+                Direct Line(Office) : +91-80-23600004<br>
+                <span><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="48px"
+                        fill="#5f6368">
+                        <path
+                            d="M795-120q-116 0-236.5-56T335-335Q232-438 176-558.5T120-795q0-19.29 12.86-32.14Q145.71-840 165-840h140q14 0 24 10t14 25l26.93 125.64Q372-665 369.5-653.5t-10.73 19.73L259-533q26 44 55 82t64 72q37 38 78 69.5t86 55.5l95-98q10-11 23.15-15 13.15-4 25.85-2l119 26q15 4 25 16.04 10 12.05 10 26.96v135q0 19.29-12.86 32.14Q814.29-120 795-120ZM229-588l81-82-23-110H180q2 42 13.5 88.5T229-588Zm369 363q41 19 89 31t93 14v-107l-103-21-79 83ZM229-588Zm369 363Z" />
+                    </svg></span>Mobile : 7845529705 <br>
+                <h5>>any quries mail to hostel@girlstech.com</h5>
+
+            </div>
+            <div class="footer">
+
+                <div class="chatbot">
+                    <img src="whatsapp.jfif" width="80px">
+
+                </div>
+            </div>
+
+
+
+</body>
+
+</html>
